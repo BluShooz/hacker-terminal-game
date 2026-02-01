@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# 🖥️ Hacker Terminal - Word Scramble Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cyberpunk-themed word scramble game built with React, TypeScript, and Tailwind CSS. Test your decryption skills as you breach through increasingly difficult firewall tiers!
 
-Currently, two official plugins are available:
+## 🎮 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Play Now:** [https://hacker-terminal-game-f0z6h8405-jon-smiths-projects-a3dfc292.vercel.app](https://hacker-terminal-game-f0z6h8405-jon-smiths-projects-a3dfc292.vercel.app)
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **6 Difficulty Tiers**: Progress through increasingly complex word challenges
+- **Boss Mode**: Face the ultimate encryption challenge with rapid-fire scrambled words
+- **Dynamic Scoring System**: Earn points based on tier difficulty
+- **Timer Pressure**: Race against the clock to decrypt each word
+- **Descramble Power-Up**: Reveal the word for a score penalty when you're stuck
+- **Retro Hacker Aesthetic**: Matrix-inspired green terminal with glitch effects
+- **Audio Feedback**: Beeps and alarms enhance the hacking experience
+- **Responsive Design**: Play on desktop or mobile devices
 
-## Expanding the ESLint configuration
+## 🎯 How to Play
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Click **"Initialize Breach"** to start
+2. Unscramble the displayed word by typing your answer
+3. Progress through tiers by earning points (100 points per tier)
+4. Reach Tier 6 to face the **Boss Mode** challenge
+5. Use the **Trace Decryption** button (-25 points) if you need help
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Scoring
+- Tier 1-2: 10-20 points per word
+- Tier 3-4: 30-40 points per word
+- Tier 5: 50 points per word
+- Boss Mode: 50 points per word + 100 bonus for completion
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **Web Audio API** - Sound effects
+
+## 🚀 Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/BluShooz/hacker-terminal-game.git
+cd hacker-terminal-game
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is deployed on Vercel with automatic deployments from the main branch.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Deploy Your Own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/BluShooz/hacker-terminal-game)
+
+## 🎨 Game Mechanics
+
+- **Word Pool**: Each tier has unique words that won't repeat in a session
+- **Timer**: 30 seconds per word (hidden in Boss Mode for extra pressure)
+- **Tier Progression**: Automatic advancement every 100 points
+- **Boss Mode**: 3 rapid-fire words with flickering scrambles
+- **Game Over**: Timeout on Tier 6 results in "identity compromised"
+
+## 📝 License
+
+MIT License - feel free to use this project for learning or building your own games!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+---
+
+**Built with ❤️ by Dark Passenger** | Powered by Terminal_Zero
